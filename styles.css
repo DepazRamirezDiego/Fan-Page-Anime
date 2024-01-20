@@ -44,47 +44,47 @@ a{
 
 
 /*HEADER*/
-
-.header {
+.header{
     width: 100%;
     background: #ffffffec;
     z-index: 100; 
     background-color: rgba(255, 255, 255, 1);
     max-height: auto;
     box-shadow: 0px 15px 10px -15px #111;
-  }
-
-  .nav {
-    margin: auto;
-    max-width: 86%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 4px 0px;
-  }
-  
-  .navL {
-    width: 13.6vw;
     margin: auto;
     padding: 0%;
   }
+
+  .nav{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 0px;
+  }
   
-  .navL-img {
+  .header-img{
+    width: 14vw;
+    padding: 0%;
+    margin: auto;
+}
+
+  .navL-img{
     width: 100%;
   }
   
-  .navLink, .navL, .navToggle, .navclose {
+  .navLink, .navToggle, .navclose{
     color: #000;
   }
 
-  .navToggle {
+  .navToggle{
     font-size: 1.25rem;
     cursor: pointer;
   }
   
-  .navList {
+  .navList{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,15 @@ a{
     cursor: pointer;
   }
 
-  .navLink:hover {
+  .navM{
+    margin: auto;
+  }
+
+  .navItem a{
+    font-weight: bolder;
+  }
+
+  .navLink:hover{
     color: #000000b9;
     text-transform: calc(50%);
     color: #000000b9;
@@ -108,6 +116,76 @@ a{
   }
   
   /* Show menu */
-  .show-menu {
+  .show-menu{
     top: 0;
+  }
+
+  /*Sección del Carrusel de Noticias*/
+  .carousel-item img{
+    -webkit-backdrop-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    filter: brightness(90%);
+}
+
+.box h1, .box h2, .box a{
+    color: #fff;
+  }
+
+  .box h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Jost', 'sans-serif';
+  }
+
+  .box h2{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    font-family: 'Jost', 'sans-serif';
+  }
+
+  .box{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .box{
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    padding: 25px;
+}
+
+
+
+/*Responsive - Mostrar menu hamburguesa en una resolución menor o igual a 1024px de ancho*/
+@media (max-width: 1024px) {
+    .navM {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        top: -150%;
+        left: 0;
+        padding: 2rem 0;
+        transition: 0.4s;
+        z-index: 100;
+        border-radius: 0 0 .8rem .8rem;
+    }
+    .show-menu {
+        top: 0;
+    }
+}
+/*Mostrar el header con los links en una resolución mayor o igual a 1025px de ancho*/
+@media (min-width: 1025px) {
+    .navclose, .navToggle {
+        display: none;
+    }
+    .navList {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+    .navLink {
+        text-transform: initial;
+        font-weight: initial;
+    }
   }
