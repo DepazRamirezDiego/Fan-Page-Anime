@@ -244,6 +244,18 @@ a{
 }
 
 /*Sinopsis de los Titulos Destacados*/
+.about-anime{
+  max-width: 90%;
+  margin: auto;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.title-anime{
+  margin: 10px 0 20px 0;
+
+}
+
 .title-anime h5{
   font-family: 'Tektur', sans-serif;
     text-align: left;
