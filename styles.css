@@ -130,24 +130,30 @@ a{
     filter: brightness(90%);
 }
 
-.box h1, .box h2, .box a{
+.carousel-caption{
+  background: rgba(0,0,0,.5);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.carousel-caption h1, .carousel-caption h2, .carousel-caption a{
     color: #fff;
   }
 
-  .box h1{
+  .carousel-caption h1{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bolder;
     font-family: 'Jost', 'sans-serif';
   }
 
-  .box h2{
+  .carousel-caption h2{
     font-size: 1.8rem;
     font-weight: bolder;
     font-family: 'Jost', 'sans-serif';
   }
 
-  .box .paragraph-carrousel{
+  .carousel-caption .paragraph-carrousel{
     font-size: 1.6rem;
   }
 
@@ -160,20 +166,14 @@ a{
     font-size: 1rem;
   }
 
-  .box{
-    background: rgba(0,0,0,.5);
-    width: 100%;
-    padding: 25px;
-}
-
 .carousel-inner{
-    height: 88vh;
+    height: 90vh;
     width: 80vw;
     margin: auto;
 }
 
 .carousel-item img{
-    height: 88vh;
+    height: 90vh;
 }
 
 .carousel-control-prev, .carousel-control-next{
