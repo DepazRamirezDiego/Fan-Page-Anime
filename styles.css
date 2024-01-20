@@ -136,24 +136,126 @@ a{
 
   .box h1{
     font-size: 2rem;
+    text-transform: uppercase;
     font-weight: bolder;
     font-family: 'Jost', 'sans-serif';
   }
 
   .box h2{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: bolder;
     font-family: 'Jost', 'sans-serif';
   }
 
-  .box{
+  .box .paragraph-carrousel{
+    font-size: 1.6rem;
+  }
+
+  .box p{
+    font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .box a{
+    font-size: 1rem;
   }
 
   .box{
     background: rgba(0,0,0,.5);
     width: 100%;
     padding: 25px;
+}
+
+.carousel-inner{
+    height: 88vh;
+    width: 80vw;
+    margin: auto;
+}
+
+.carousel-item img{
+    height: 88vh;
+}
+
+.carousel-control-prev, .carousel-control-next{
+  background-color: rgba(0,0,0,.5);
+  width: 9.5vw;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  background-color: rgba(0,0,0,.8);
+}
+
+
+/*Estilos generales para titulos*/
+.principal-title, .medium-title, .title-questions-container{
+  background: #ffffff80;
+    padding: 28px 0 16px 0;
+}
+
+.principal-title h3, .medium-title h4, .title-questions{
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: auto;
+  text-transform: uppercase;
+}
+/*Galeria de imagenes*/
+/*Galería*/
+.gallery{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-gallery{
+  display: flex;
+  width: 92%;
+  height: 84vh;
+  margin: auto;
+}
+
+.img-gallery{
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .94;
+  transition: .5 ease;
+  border: 3px solid #000;
+}
+
+.img-gallery-1{
+  border-right: none;
+}
+
+.img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+  border-left: none;
+}
+
+.gallery-img{
+  width: 100%;
+  height: 100%;
+}
+
+.img-gallery:hover{
+  cursor: pointer;
+  width: 420px;
+  opacity: 1;
+  filter: contrast(110%);
+}
+
+/*Sinopsis de los Titulos Destacados*/
+.title-anime h5{
+  font-family: 'Tektur', sans-serif;
+    text-align: left;
+    font-size: 1.8rem;
+    max-width: 100%;
+    font-weight: bold;
+    display: inline-block; 
+    background: orange;
+    padding: 10px 20px;
+    display: inline-block; 
+    background: orange;
+    padding: 10px 20px;
 }
 
 
