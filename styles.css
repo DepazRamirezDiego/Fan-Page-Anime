@@ -331,7 +331,7 @@ a{
 
 .questions-padding--add{
   padding-bottom: 30px;
-  height: 150px;
+  height: 140px;
   transition: .3s;
 }
 
@@ -374,7 +374,6 @@ a{
   text-align: left;
   height: 0;
   transition: height .3s;
-
 }
 
 .questions-img{
