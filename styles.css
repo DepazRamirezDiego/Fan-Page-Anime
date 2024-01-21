@@ -311,6 +311,7 @@ a{
 
 .questions-paragraph{
   font-size: 1.2rem;
+  margin-top: 6px;
 }
 
 .questions-container{
@@ -344,7 +345,6 @@ a{
   text-align: left;
   display: flex;
   font-size: 20px;
-  padding: 26px 0 10px;
   padding: 26px 0 10px;
   cursor: pointer;
   color: #000;
@@ -422,7 +422,7 @@ a{
   margin: auto;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 16px;
   color: #ffffff;
   margin-bottom: 35px;
@@ -581,19 +581,6 @@ a{
     height: auto;
     display: block;
   }
-
-  .footer-social{
-    display: flex;
-    width: 100%;
-    margin: auto;
-    text-align: start;
-    margin-top: 24px;
-    justify-content: space-evenly;
-}
-
-.social-links, .footer-social h4{
-    margin: auto;
-}
 }
 
 
@@ -614,9 +601,23 @@ a{
 
   /*Responsive - Hasta 768px de ancho*/
   @media (max-width: 768px){
-    .navToggle{
-      font-size: 1.25rem;
-      cursor: pointer;
+    /*Nav/Header - Responsive*/
+    .header{
+      border: 2px solid black;
+      justify-content: space-around;
+    }
+    
+    .nav{
+      justify-content: space-between;
+      border: 2px solid red;
+    }
+
+    .header-img{
+      width: 20vw;
+    }
+
+    .navToggle, .navclose{
+      font-size: 1.5rem;
     }
     
     .navList{
@@ -627,6 +628,11 @@ a{
       margin: auto;
     }
 
+    .header-img, .navToggle {
+    margin: 0px 40px;
+}
+
+    /*Carousel - Responsive*/
     .carousel-caption h1{
       font-size: 1.4rem;
       text-transform: uppercase;
@@ -657,6 +663,7 @@ a{
       height: 76vh;
     }
 
+  /*Galeria - Responsive*/
   .container-gallery{
       display: flex;
       width: 96%;
@@ -693,6 +700,7 @@ a{
     filter: contrast(110%);
   }
 
+  /*Sinopsis destacados del año - Responsive*/
   .title-anime h5{
     font-size: 1.3rem;
     padding: 10px 16px;
@@ -717,6 +725,28 @@ a{
     height: 39vh;
   }
 
+  /*Preguntas frecuentes - Responsive*/
+  .questions-paragraph, .questions-title{
+    font-size: .9rem;
+  }
+
+  .questions-title{
+    padding: 20px 0px 0px 0px;
+  }
+
+  .questions-show{
+    font-size: .82rem;
+  }
+  
+.questions-padding{
+  height: 9.2vh;
+}
+
+.questions-padding--add{
+  height: 20vh;
+}
+
+  /*Footer - Responsive*/
   .first-part-footer{
     display: flex;
     margin: auto;
@@ -724,11 +754,11 @@ a{
   }
 
   .footer-img{
-      width: 36vw;
+    width: 36vw;
   }
 
   .first-part-footer img{
-      width: 100%;
+    width: 100%;
   }
 
   .footer-copyright{
@@ -736,15 +766,18 @@ a{
     row-gap: 1rem;
   }
 
-  .footerspan, .footertext{
-      display: block;
-      margin: auto;
-      font-size: .8rem;
-      text-align: center;
+  .footerspan, .footertext, .footer-col ul li a{
+    margin: auto;
+    font-size: .8rem;
   }
 
-  
+  .social-links, .footer-social h3{
+    margin: auto;
+  }
 
+  .footer-col h3{
+    font-size: .9rem;
+  }
 }
 
   
