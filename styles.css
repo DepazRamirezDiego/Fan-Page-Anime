@@ -601,15 +601,9 @@ a{
 
   /*Responsive - Hasta 768px de ancho*/
   @media (max-width: 768px){
-    /*Nav/Header - Responsive*/
-    .header{
-      border: 2px solid black;
-      justify-content: space-around;
-    }
-    
+    /*Nav/Header - Responsive*/    
     .nav{
       justify-content: space-between;
-      border: 2px solid red;
     }
 
     .header-img{
