@@ -517,8 +517,6 @@ a{
   justify-content: space-evenly;
 }
 
-
-
 /*Responsive - Mostrar menu hamburguesa en una resolución menor o igual a 1024px de ancho*/
 @media (max-width: 1024px) {
     .navM {
@@ -550,3 +548,14 @@ a{
         font-weight: initial;
     }
   }
+
+  /*Responsive - Hasta 767px de ancho*/
+  @media (max-width: 767px){
+    
+  }
+
+  /*Responsive - De 768px a 989px de ancho */
+
+  /*Responsive - De 990px a 1200px de ancho*/
+
+  /*Responsive - De 1201px a 1400px de ancho*/
