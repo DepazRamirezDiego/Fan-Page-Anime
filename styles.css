@@ -928,6 +928,43 @@ a{
   }
 }
 
+  /*Responsive - De 769px a 860px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+  @media (min-width: 769px) and (max-width: 860px){
+    /*Carousel - Responsive*/
+    .carousel-inner{
+      height: 70vh;
+      margin: auto;
+    }
+  
+  .carousel-item img{
+      height: 70vh;
+    }
+
+    /*Sinopsis destacados del año - Responsive*/
+    .img-anime img{
+        width: 100%;
+        height: 40vh;
+    }
+  }
+
+    /*Responsive - De 861px a 900px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
+    @media (min-width: 861px) and (max-width: 900px){
+      /*Sinopsis destacados del año - Responsive*/
+      .img-anime img{
+          width: 100%;
+          height: 42vh;
+      }
+    }
+
+    /*Responsive - De 901px a 940px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
+    @media (min-width: 901px) and (max-width: 940px){
+      /*Sinopsis destacados del año - Responsive*/
+      .img-anime img{
+          width: 100%;
+          height: 44vh;
+        }
+      }
+
   /*Responsive - De 981px a 1200px de ancho*/
 
   /*Responsive - De 1201px a 1400px de ancho*/
