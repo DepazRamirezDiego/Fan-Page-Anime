@@ -774,11 +774,160 @@ a{
   }
 }
 
-  /*Responsive - De 769px a 990px de ancho */
-  @media (min-width: 769px) and (max-width: 990px){
+  /*Responsive - De 769px a 980px de ancho */
+  @media (min-width: 769px) and (max-width: 980px){
+    /*Estilos generales para titulos*/
+    .principal-title h3, .medium-title h4, .title-questions{
+      font-size: 1.6rem;
+    }
     
+   /*Header/Navbar - Responsive*/
+   .nav{
+    justify-content: space-between;
   }
 
-  /*Responsive - De 991px a 1200px de ancho*/
+  .header-img{
+    width: 22vw;
+  }
+
+  .navToggle, .navclose{
+    font-size: 1.6rem;
+  }
+  
+  .navList{
+    row-gap: 1.2rem;
+  }
+
+  .header-img, .navToggle {
+    margin: 0px 50px;
+  }
+
+    /*Carousel - Responsive*/
+    .carousel-caption h1{
+      font-size: 1.6rem;
+    }
+  
+    .carousel-caption h2, .carousel-caption .paragraph-carrousel{
+      font-size: 1.36rem;
+    }
+
+    .carousel-caption a{
+      font-size: 1rem;
+    }
+
+    .news-summary{
+      display: none;
+    }
+
+    .carousel-inner{
+      height: 78vh;
+      margin: auto;
+    }
+  
+  .carousel-item img{
+      height: 78vh;
+    }
+
+  /*Galeria - Responsive*/
+  .container-gallery{
+    display: flex;
+    width: 96%;
+    height: 85vh;
+    margin: auto;
+  }
+
+  .img-gallery{
+      border: 2px solid #000;
+    }
+
+  .img-gallery-1{
+    border-right: none;
+  }
+
+  .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+    border-left: none;
+  }
+
+  .gallery-img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-gallery:hover{
+    cursor: pointer;
+    width: auto;
+    opacity: 1;
+    filter: contrast(110%);
+  }
+
+  /*Sinopsis destacados del año - Responsive*/
+  .title-anime h5{
+    font-size: 1.4rem;
+    padding: 10px 16px;
+  }
+  
+  .sinopsis li{
+    margin-left: 14px;
+  }
+
+  .sinopsis ul li, .anime-span{
+    font-size: .9rem;
+  }
+
+  .img-anime img{
+    width: 100%;
+    height: 46vh;
+  }
+
+  /*Preguntas frecuentes - Responsive*/
+  .questions-paragraph, .questions-title{
+    font-size: 1rem;
+  }
+
+  .questions-title{
+    padding: 20px 0px 0px 0px;
+  }
+
+  .questions-show{
+    font-size: .88rem;
+  }
+  
+.questions-padding{
+  height: 9.2vh;
+}
+
+.questions-padding--add{
+  height: 21vh;
+}
+
+  /*Footer - Responsive*/
+  .footer-img{
+    width: 36vw;
+  }
+
+  .first-part-footer img{
+    width: 100%;
+  }
+
+  .footer-copyright{
+    flex-direction: column;
+    row-gap: 1.2rem;
+  }
+
+  .footerspan, .footertext, .footer-col ul li a{
+    margin: auto;
+    font-size: .9rem;
+  }
+
+  .social-links, .footer-social h3{
+    margin: auto;
+  }
+
+  .footer-col h3{
+    font-size: 1rem;
+  }
+}
+
+  /*Responsive - De 981px a 1200px de ancho*/
 
   /*Responsive - De 1201px a 1400px de ancho*/
