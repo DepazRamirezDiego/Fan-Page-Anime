@@ -995,6 +995,22 @@ a{
     }
 
     /*Carrusel - Responsive*/
+    .carousel-caption h1{
+      font-size: 1.7rem;
+    }
+  
+    .carousel-caption h2, .carousel-caption .paragraph-carrousel{
+      font-size: 1.6rem;
+    }
+
+    .carousel-caption p{
+      display: none;
+    }
+
+    .carousel-caption a{
+      font-size: 1.05rem;
+    }
+
     .carousel-inner{
       height: 90vh;
       width: 100vw;
