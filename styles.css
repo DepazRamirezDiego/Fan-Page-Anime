@@ -901,6 +901,7 @@ a{
 }
 
   /*Footer - Responsive*/
+  /*Cambiar a 24vw, hacer un cambio en el footer-img del anterior responsive*/
   .footer-img{
     width: 36vw;
   }
@@ -967,7 +968,137 @@ a{
 
   /*Responsive - De 981px a 1200px de ancho*/
     @media (min-width: 981px) and (max-width: 1200px){
-      
+    /*Estilos generales para titulos*/
+    .principal-title h3, .medium-title h4, .title-questions{
+      font-size: 1.7rem;
     }
+
+    /*Header/Navbar - Responsive*/
+    .nav{
+      justify-content: space-between;
+    }
+  
+    .header-img{
+      width: 20vw;
+    }
+  
+    .navToggle, .navclose{
+      font-size: 1.9rem;
+    }
+    
+    .navList{
+      row-gap: 1.4rem;
+    }
+  
+    .header-img, .navToggle {
+      margin: 0px 60px;
+    }
+
+    /*Carrusel - Responsive*/
+    .carousel-inner{
+      height: 90vh;
+      width: 100vw;
+      margin: auto;
+    }
+      
+    .carousel-item img{
+      height: 90vh;
+    }
+
+    .carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover{
+      background: none;
+    }
+
+/*Galeria - Responsive*/
+.container-gallery{
+  display: flex;
+  width: 96%;
+  height: 85vh;
+  margin: auto;
+}
+
+.img-gallery{
+    border: 3px solid #000;
+  }
+
+.img-gallery-1{
+  border-right: none;
+}
+
+.img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+  border-left: none;
+}
+
+.img-gallery:hover{
+  width: 390px;
+}
+
+/*Sinopsis destacados del año - Responsive*/
+.title-anime h5{
+  font-size: 1.5rem;
+  padding: 10px 16px;
+}
+
+.sinopsis li{
+  margin-left: 14px;
+}
+
+.sinopsis ul li, .anime-span{
+  font-size: .9rem;
+}
+
+.img-anime img{
+  width: 100%;
+  height: 47vh;
+}
+
+/*Preguntas frecuentes - Responsive*/
+.questions-paragraph, .questions-title{
+  font-size: 1.1rem;
+}
+
+.questions-title{
+  padding: 20px 0px 0px 0px;
+}
+
+.questions-show{
+  font-size: .95rem;
+}
+
+.questions-padding{
+height: 9.2vh;
+}
+
+.questions-padding--add{
+height: 21vh;
+}
+
+/*Footer - Responsive*/
+.footer-img{
+  width: 36vw;
+}
+
+.first-part-footer img{
+  width: 100%;
+}
+
+.footer-copyright{
+  flex-direction: column;
+  row-gap: 1.4rem;
+}
+
+.footerspan, .footertext, .footer-col ul li a{
+  margin: auto;
+  font-size: .96rem;
+}
+
+.social-links, .footer-social h3{
+  margin: auto;
+}
+
+.footer-col h3{
+  font-size: 1.1rem;
+}
+}
 
   /*Responsive - De 1201px a 1400px de ancho*/
