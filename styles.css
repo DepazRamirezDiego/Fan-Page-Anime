@@ -1012,13 +1012,13 @@ a{
     }
 
     .carousel-inner{
-      height: 90vh;
+      height: 84vh;
       width: 100vw;
       margin: auto;
     }
       
     .carousel-item img{
-      height: 90vh;
+      height: 84vh;
     }
 
     .carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover{
