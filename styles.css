@@ -1193,3 +1193,6 @@ height: 21vh;
 
 
   /*Responsive - De 1201px a 1400px de ancho*/
+  @media (min-width: 1201px) and (max-width: 1400px){
+    
+  }
