@@ -1117,6 +1117,13 @@ height: 21vh;
 }
 }
 
+  /*Responsive - De 1025px a 1200px de ancho - Responsive hecho para ajustar la cantidad de carácteres del texto de la sección de noticias*/
+  @media (min-width: 1025px) and (max-width: 1200px){
+    .carousel-caption p{
+      display: block;
+    }
+  }
+
   /*Responsive - De 1025px a 1100px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
   @media (min-width: 1025px) and (max-width: 1100px){
     .carousel-inner{
