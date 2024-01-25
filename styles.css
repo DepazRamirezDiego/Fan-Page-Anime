@@ -1304,7 +1304,6 @@ height: 9.2vh;
 height: 22vh;
 }
 
-
 /*Footer - Responsive*/
 .footer-img{
   width: 30vw;
@@ -1318,3 +1317,16 @@ height: 22vh;
   font-size: 1.2rem;
 }
   }
+
+  /*Responsive - De 1290px a 1400px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
+@media (min-width: 1290px) and (max-width: 1400px){
+  /*Preguntas frecuentes - Responsive*/
+  .questions-padding{
+    height: 8.4vh;
+    }
+    
+    .questions-padding--add{
+    height: 17vh;
+    }
+}
+
