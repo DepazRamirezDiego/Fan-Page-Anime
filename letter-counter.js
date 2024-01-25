@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    function letteCount(length) {
+    function letterCounter(length) {
         var cells = document.querySelectorAll('.news-summary');
         cells.forEach(function (cell) {
             var contenido = cell.textContent;
@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function handleResize() {
         if (window.innerWidth >= 1025 && window.innerWidth <= 1200) {
-            letteCount(160);
+            letterCounter(160);
         } else if (window.innerWidth >= 1201 && window.innerWidth <= 1400) {
-            letteCount(240);
+            letterCounter(240);
         }
     }
 
