@@ -168,7 +168,7 @@ a{
 
 .carousel-inner{
     height: 90vh;
-    width: 80vw;
+    width: 86vw;
     margin: auto;
 }
 
@@ -178,7 +178,7 @@ a{
 
 .carousel-control-prev, .carousel-control-next{
   background-color: rgba(0,0,0,.5);
-  width: 9.5vw;
+  width: 6.46vw;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -273,7 +273,7 @@ a{
 
 .img-anime img{
   width: 100%;
-  height: 64vh;
+  height: 60vh;
 }
 
 .sinopsis{
@@ -953,9 +953,6 @@ a{
           width: 100%;
           height: 40vh;
       }
-      img{
-        border: 2px solid red;
-      }
     }
 
     /*Responsive - De 901px a 940px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
@@ -965,17 +962,10 @@ a{
           width: 100%;
           height: 40vh;
         }
-        img{
-          border: 2px solid black;
-        }
       }
 
   /*Responsive - De 981px a 1200px de ancho*/
     @media (min-width: 981px) and (max-width: 1200px){
-    img{
-      border: 2px solid green;
-    }
-    
       /*Estilos generales para titulos*/
     .principal-title h3, .medium-title h4, .title-questions{
       font-size: 1.7rem;
@@ -1126,7 +1116,6 @@ height: 19vh;
     margin: auto;
     font-size: .96rem;
   }
-  
 }
 
   /*Responsive - De 1025px a 1200px de ancho - Responsive hecho para ajustar la cantidad de carácteres del texto de la sección de noticias*/
@@ -1138,9 +1127,7 @@ height: 19vh;
 
   /*Responsive - De 1025px a 1100px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
   @media (min-width: 1025px) and (max-width: 1100px){
-    img{
-      border: 2px solid turquoise;
-    }
+    /*Carrusel - Responsive*/
     .carousel-inner{
       height: 82vh;
       width: 100vw;
@@ -1154,6 +1141,7 @@ height: 19vh;
 
   /*Responsive - De 1101px a 1120px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
   @media (min-width: 1101px) and (max-width: 1120px){
+    /*Carrusel - Responsive*/
     .carousel-inner{
       height: 86vh;
       width: 100vw;
@@ -1164,18 +1152,15 @@ height: 19vh;
       height: 86vh;
     }
 
-    img{
-      border: 2px solid royalblue;
-    }
-
     .img-anime img{
       width: 100%;
-      height: 50vh;
+      height: 44vh;
     }
   }
 
     /*Responsive - De 1121px a 1200px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
     @media (min-width: 1121px) and (max-width: 1200px){
+      /*Carrusel - Responsive*/
       .carousel-inner{
         height: 84vh;
         width: 100vw;
@@ -1186,10 +1171,7 @@ height: 19vh;
         height: 84vh;
       }
   
-      img{
-        border: 10px solid purple;
-      }
-  
+      /*Sinopsis destacados del año - Responsive*/
       .img-anime img{
         width: 100%;
         height: 46vh;
@@ -1198,10 +1180,7 @@ height: 19vh;
 
     /*Responsive - De 1141px a 1160px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
     @media (min-width: 1141px) and (max-width: 1200px){
-      img{
-        border: 5px solid pink;
-      }
-      
+      /*Carrusel - Responsive*/
       .carousel-inner{
         height: 86vh;
         width: 100vw;
@@ -1212,6 +1191,7 @@ height: 19vh;
         height: 86vh;
       }
       
+      /*Sinopsis destacados del año - Responsive*/
       .img-anime img{
         width: 100%;
         height: 48vh;
@@ -1220,9 +1200,6 @@ height: 19vh;
 
   /*Responsive - De 1201px a 1400px de ancho*/
   @media (min-width: 1201px) and (max-width: 1400px){
-    img{
-      border: 2px solid lime;
-    }
     /*Estilos generales para titulos*/
     .principal-title h3, .medium-title h4, .title-questions{
       font-size: 1.8rem;
@@ -1259,8 +1236,6 @@ height: 19vh;
     .carousel-item img{
       height: 88vh;
     }
-
-    /*ME QUEDÉ ACÁ - TERMINAR DE MEJORAR EL RESPONSIVE*/
 
     .carousel-control-prev, .carousel-control-next{
       background: rgba(0,0,0,.5);
@@ -1328,11 +1303,11 @@ height: 19vh;
 }
 
 .questions-padding{
-height: 9.2vh;
+height: 8.4vh;
 }
 
 .questions-padding--add{
-height: 22vh;
+height: 20vh;
 }
 
 /*Footer - Responsive*/
@@ -1349,8 +1324,22 @@ height: 22vh;
 }
   }
 
+  /*Responsive - De 1275px a 1289px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
+@media (min-width: 1275px) and (max-width: 1289px){
+  /*Preguntas frecuentes - Responsive*/
+  .questions-padding--add{
+    height: 16vh;
+    }
+  }
+
   /*Responsive - De 1290px a 1400px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
 @media (min-width: 1290px) and (max-width: 1400px){
+      /*Sinopsis destacados del año - Responsive*/
+      .img-anime img{
+    width: 100%;
+    height: 54vh;
+  }
+
   /*Preguntas frecuentes - Responsive*/
   .questions-padding{
     height: 8.4vh;
