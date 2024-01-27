@@ -649,12 +649,12 @@ a{
     }
 
     .carousel-inner{
-      height: 76vh;
+      max-height: 60vh;
       margin: auto;
     }
   
   .carousel-item img{
-      height: 76vh;
+      max-height: 60vh;
     }
 
   /*Galeria - Responsive*/
@@ -716,7 +716,7 @@ a{
 
   .img-anime img{
     width: 100%;
-    height: 39vh;
+    height: 32vh;
   }
 
   /*Preguntas frecuentes - Responsive*/
@@ -733,11 +733,11 @@ a{
   }
   
 .questions-padding{
-  height: 9.2vh;
+  height: 8vh;
 }
 
 .questions-padding--add{
-  height: 20vh;
+  height: 17.4vh;
 }
 
   /*Footer - Responsive*/
@@ -748,7 +748,7 @@ a{
   }
 
   .footer-img{
-    width: 36vw;
+    width: 26vw;
   }
 
   .first-part-footer img{
@@ -820,12 +820,12 @@ a{
     }
 
     .carousel-inner{
-      height: 78vh;
+      height: 70vh;
       margin: auto;
     }
   
   .carousel-item img{
-      height: 78vh;
+      height: 70vh;
     }
 
   /*Galeria - Responsive*/
@@ -876,7 +876,7 @@ a{
 
   .img-anime img{
     width: 100%;
-    height: 46vh;
+    height: 36vh;
   }
 
   /*Preguntas frecuentes - Responsive*/
@@ -893,17 +893,16 @@ a{
   }
   
 .questions-padding{
-  height: 9.2vh;
+  height: 8vh;
 }
 
 .questions-padding--add{
-  height: 21vh;
+  height: 18vh;
 }
 
   /*Footer - Responsive*/
-  /*Cambiar a 24vw, hacer un cambio en el footer-img del anterior responsive*/
   .footer-img{
-    width: 36vw;
+    width: 28vw;
   }
 
   .first-part-footer img{
@@ -933,18 +932,17 @@ a{
   @media (min-width: 769px) and (max-width: 860px){
     /*Carousel - Responsive*/
     .carousel-inner{
-      height: 70vh;
+      height: 66vh;
       margin: auto;
     }
-  
+
   .carousel-item img{
-      height: 70vh;
+      height: 66vh;
     }
 
     /*Sinopsis destacados del año - Responsive*/
     .img-anime img{
         width: 100%;
-        height: 40vh;
     }
   }
 
@@ -953,7 +951,10 @@ a{
       /*Sinopsis destacados del año - Responsive*/
       .img-anime img{
           width: 100%;
-          height: 42vh;
+          height: 40vh;
+      }
+      img{
+        border: 2px solid red;
       }
     }
 
@@ -962,13 +963,20 @@ a{
       /*Sinopsis destacados del año - Responsive*/
       .img-anime img{
           width: 100%;
-          height: 44vh;
+          height: 40vh;
+        }
+        img{
+          border: 2px solid black;
         }
       }
 
   /*Responsive - De 981px a 1200px de ancho*/
     @media (min-width: 981px) and (max-width: 1200px){
-    /*Estilos generales para titulos*/
+    img{
+      border: 2px solid green;
+    }
+    
+      /*Estilos generales para titulos*/
     .principal-title h3, .medium-title h4, .title-questions{
       font-size: 1.7rem;
     }
@@ -979,7 +987,7 @@ a{
     }
   
     .header-img{
-      width: 20vw;
+      width: 22vw;
     }
   
     .navToggle, .navclose{
@@ -1012,13 +1020,13 @@ a{
     }
 
     .carousel-inner{
-      height: 84vh;
+      height: 80vh;
       width: 100vw;
       margin: auto;
     }
       
     .carousel-item img{
-      height: 84vh;
+      height: 80vh;
     }
 
     .carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -1065,7 +1073,7 @@ a{
 
 .img-anime img{
   width: 100%;
-  height: 47vh;
+  height: 42vh;
 }
 
 /*Preguntas frecuentes - Responsive*/
@@ -1082,30 +1090,20 @@ a{
 }
 
 .questions-padding{
-height: 9.2vh;
+height: 8vh;
 }
 
 .questions-padding--add{
-height: 21vh;
+height: 19vh;
 }
 
 /*Footer - Responsive*/
 .footer-img{
-  width: 36vw;
+  width: 30vw;
 }
 
 .first-part-footer img{
   width: 100%;
-}
-
-.footer-copyright{
-  flex-direction: column;
-  row-gap: 1.4rem;
-}
-
-.footerspan, .footertext, .footer-col ul li a{
-  margin: auto;
-  font-size: .96rem;
 }
 
 .social-links, .footer-social h3{
@@ -1117,6 +1115,20 @@ height: 21vh;
 }
 }
 
+/*Responsive - De 981px a 1025px de ancho - Responsive para cambiar el formato del Copyright del Footer*/
+@media (min-width: 981px) and (max-width: 1025px){
+  .footer-copyright{
+    flex-direction: column;
+    row-gap: 1.4rem;
+  }
+  
+  .footerspan, .footertext, .footer-col ul li a{
+    margin: auto;
+    font-size: .96rem;
+  }
+  
+}
+
   /*Responsive - De 1025px a 1200px de ancho - Responsive hecho para ajustar la cantidad de carácteres del texto de la sección de noticias*/
   @media (min-width: 1025px) and (max-width: 1200px){
     .carousel-caption p{
@@ -1126,27 +1138,34 @@ height: 21vh;
 
   /*Responsive - De 1025px a 1100px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
   @media (min-width: 1025px) and (max-width: 1100px){
+    img{
+      border: 2px solid turquoise;
+    }
     .carousel-inner{
-      height: 90vh;
+      height: 82vh;
       width: 100vw;
       margin: auto;
     }
       
     .carousel-item img{
-      height: 90vh;
+      height: 82vh;
     }
   }
 
   /*Responsive - De 1101px a 1120px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
   @media (min-width: 1101px) and (max-width: 1120px){
     .carousel-inner{
-      height: 96vh;
+      height: 86vh;
       width: 100vw;
       margin: auto;
     }
       
     .carousel-item img{
-      height: 96vh;
+      height: 86vh;
+    }
+
+    img{
+      border: 2px solid royalblue;
     }
 
     .img-anime img{
@@ -1155,45 +1174,55 @@ height: 21vh;
     }
   }
 
-    /*Responsive - De 1101px a 1123px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
-    @media (min-width: 1121px) and (max-width: 1140px){
+    /*Responsive - De 1121px a 1200px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+    @media (min-width: 1121px) and (max-width: 1200px){
       .carousel-inner{
-        height: 98vh;
+        height: 84vh;
         width: 100vw;
         margin: auto;
       }
         
       .carousel-item img{
-        height: 98vh;
+        height: 84vh;
+      }
+  
+      img{
+        border: 10px solid purple;
       }
   
       .img-anime img{
         width: 100%;
-        height: 52vh;
+        height: 46vh;
       }
     }
 
     /*Responsive - De 1141px a 1160px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
     @media (min-width: 1141px) and (max-width: 1200px){
+      img{
+        border: 5px solid pink;
+      }
+      
       .carousel-inner{
-        height: 100vh;
+        height: 86vh;
         width: 100vw;
         margin: auto;
       }
             
       .carousel-item img{
-        height: 100vh;
+        height: 86vh;
       }
       
       .img-anime img{
         width: 100%;
-        height: 54vh;
+        height: 48vh;
       }
     }
 
-
   /*Responsive - De 1201px a 1400px de ancho*/
   @media (min-width: 1201px) and (max-width: 1400px){
+    img{
+      border: 2px solid lime;
+    }
     /*Estilos generales para titulos*/
     .principal-title h3, .medium-title h4, .title-questions{
       font-size: 1.8rem;
@@ -1222,18 +1251,20 @@ height: 21vh;
     }
 
     .carousel-inner{
-      height: 90vh;
+      height: 88vh;
       width: 90vw;
       margin: auto;
     }
       
     .carousel-item img{
-      height: 90vh;
+      height: 88vh;
     }
+
+    /*ME QUEDÉ ACÁ - TERMINAR DE MEJORAR EL RESPONSIVE*/
 
     .carousel-control-prev, .carousel-control-next{
       background: rgba(0,0,0,.5);
-      width: 5vw;
+      width: 4.6vw;
     }
 
     .carousel-control-prev:hover, .carousel-control-next:hover{
@@ -1280,7 +1311,7 @@ height: 21vh;
 
 .img-anime img{
   width: 100%;
-  height: 54vh;
+  height: 50vh;
 }
 
 /*Preguntas frecuentes - Responsive*/
