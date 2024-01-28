@@ -2,219 +2,233 @@
 
 /*ESTILOS GENERALES*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    background: #e2e2e2;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #e2e2e2;
 }
 
 
 .grid {
-    display: grid;
+  display: grid;
 }
 
 .main {
-    overflow: hidden;
-    max-width: 100%;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-h1, h2, h3, h4{
-    color: #000;
-    text-align: center;
-    font-size: 1.5rem;
+h1,
+h2,
+h3,
+h4 {
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-a{
-    list-style: none;
-    color: #000;
-    font-weight: bold;
+a {
+  list-style: none;
+  color: #000;
+  font-weight: bold;
 }
 
 
 /*HEADER*/
-.header{
-    width: 100%;
-    background: #ffffffec;
-    z-index: 100; 
-    background-color: rgba(255, 255, 255, 1);
-    max-height: auto;
-    box-shadow: 0px 15px 10px -15px #111;
-    margin: auto;
-    padding: 0%;
-  }
-
-  .nav{
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 6px 0px;
-  }
-  
-  .header-img{
-    width: 14vw;
-    padding: 0%;
-    margin: auto;
+.header {
+  width: 100%;
+  background: #ffffffec;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 1);
+  max-height: auto;
+  box-shadow: 0px 15px 10px -15px #111;
+  margin: auto;
+  padding: 0%;
 }
 
-  .navL-img{
-    width: 100%;
-  }
-  
-  .navLink, .navToggle, .navclose{
-    color: #000;
-  }
-
-  .navToggle{
-    font-size: 1.25rem;
-    cursor: pointer;
-  }
-  
-  .navList{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1.5rem;
-    margin: auto;
-  }
-  
-  .navclose {
-    font-size: 1.8rem;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.7rem;
-    cursor: pointer;
-  }
-
-  .navM{
-    margin: auto;
-  }
-
-  .navItem a{
-    font-weight: bolder;
-  }
-
-  .navLink:hover{
-    color: #000000b9;
-    text-transform: calc(50%);
-    color: #000000b9;
-    text-transform: calc(50%);
-  }
-  
-  /* Show menu */
-  .show-menu{
-    top: 0;
-  }
-
-  /*Sección del Carrusel de Noticias*/
-  .carousel-item img{
-    -webkit-backdrop-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    filter: brightness(90%);
+.nav {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 0px;
 }
 
-.carousel-caption{
-  background: rgba(0,0,0,.5);
+.header-img {
+  width: 14vw;
+  padding: 0%;
+  margin: auto;
+}
+
+.navL-img {
+  width: 100%;
+}
+
+.navLink,
+.navToggle,
+.navclose {
+  color: #000;
+}
+
+.navToggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  margin: auto;
+}
+
+.navclose {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  cursor: pointer;
+}
+
+.navM {
+  margin: auto;
+}
+
+.navItem a {
+  font-weight: bolder;
+}
+
+.navLink:hover {
+  color: #000000b9;
+  text-transform: calc(50%);
+  color: #000000b9;
+  text-transform: calc(50%);
+}
+
+/* Show menu */
+.show-menu {
+  top: 0;
+}
+
+/*Sección del Carrusel de Noticias*/
+.carousel-item img {
+  -webkit-backdrop-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  filter: brightness(90%);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, .5);
   padding: 25px;
   border-radius: 10px;
 }
 
-.carousel-caption h1, .carousel-caption h2, .carousel-caption a{
-    color: #fff;
-  }
-
-  .carousel-caption h1{
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-family: 'Jost', 'sans-serif';
-  }
-
-  .carousel-caption h2{
-    font-size: 1.8rem;
-    font-weight: bolder;
-    font-family: 'Jost', 'sans-serif';
-  }
-
-  .carousel-caption .paragraph-carrousel{
-    font-size: 1.6rem;
-  }
-
-  .box p{
-    font-size: 1.2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
-  .box a{
-    font-size: 1rem;
-  }
-
-.carousel-inner{
-    height: 90vh;
-    width: 86vw;
-    margin: auto;
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption a {
+  color: #fff;
 }
 
-.carousel-item img{
-    height: 90vh;
+.carousel-caption h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: 'Jost', 'sans-serif';
 }
 
-.carousel-control-prev, .carousel-control-next{
-  background-color: rgba(0,0,0,.5);
+.carousel-caption h2 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  font-family: 'Jost', 'sans-serif';
+}
+
+.carousel-caption .paragraph-carrousel {
+  font-size: 1.6rem;
+}
+
+.box p {
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box a {
+  font-size: 1rem;
+}
+
+.carousel-inner {
+  height: 90vh;
+  width: 86vw;
+  margin: auto;
+}
+
+.carousel-item img {
+  height: 90vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, .5);
   width: 6.46vw;
 }
 
-.carousel-control-prev:hover, .carousel-control-next:hover{
-  background-color: rgba(0,0,0,.8);
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, .8);
 }
 
 
 /*Estilos generales para titulos*/
-.principal-title, .medium-title, .questions{
+.principal-title,
+.medium-title,
+.questions {
   background: #ffffff80;
   padding: 28px 0 16px 0;
 }
 
-.principal-title h3, .medium-title h4, .title-questions{
+.principal-title h3,
+.medium-title h4,
+.title-questions {
   font-weight: bolder;
   font-size: 2rem;
   margin: auto;
   text-transform: uppercase;
 }
+
 /*Galeria de imagenes*/
 /*Galería*/
-.gallery{
+.gallery {
   width: 100%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.container-gallery{
+.container-gallery {
   display: flex;
   width: 92%;
   height: 84vh;
   margin: auto;
 }
 
-.img-gallery{
+.img-gallery {
   width: 100%;
   flex-grow: 1;
   object-fit: cover;
@@ -223,20 +237,25 @@ a{
   border: 3px solid #000;
 }
 
-.img-gallery-1{
+.img-gallery-1 {
   border-right: none;
 }
 
-.img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
+.img-gallery-2,
+.img-gallery-3,
+.img-gallery-4,
+.img-gallery-5,
+.img-gallery-6,
+.img-gallery-7 {
   border-left: none;
 }
 
-.gallery-img{
+.gallery-img {
   width: 100%;
   height: 100%;
 }
 
-.img-gallery:hover{
+.img-gallery:hover {
   cursor: pointer;
   width: 420px;
   opacity: 1;
@@ -244,22 +263,22 @@ a{
 }
 
 /*Sinopsis de los Titulos Destacados*/
-.container-sinopsis{
+.container-sinopsis {
   padding-bottom: 20px;
 }
 
-.about-anime{
+.about-anime {
   max-width: 90%;
   margin: auto;
   padding-top: 10px;
   margin-bottom: 30px;
 }
 
-.title-anime{
+.title-anime {
   margin-bottom: 20px;
 }
 
-.title-anime h5{
+.title-anime h5 {
   font-family: 'Tektur', sans-serif;
   text-align: left;
   font-size: 1.8rem;
@@ -271,16 +290,16 @@ a{
   margin: auto;
 }
 
-.img-anime img{
+.img-anime img {
   width: 100%;
   height: 60vh;
 }
 
-.sinopsis{
+.sinopsis {
   margin-top: 16px;
 }
 
-.sinopsis li{
+.sinopsis li {
   list-style: square;
   margin-left: 20px;
   margin-top: 10px;
@@ -288,40 +307,40 @@ a{
   font-size: 1.05rem;
 }
 
-.sinopsis li::marker{
+.sinopsis li::marker {
   color: orange;
 }
 
-.anime-span{
+.anime-span {
   font-weight: bold;
 }
 
 /*Preguntas Frecuentes*/
-.questions{
+.questions {
   width: 100%;
   overflow: hidden;
   text-align: center;
   background: #ffffff80;
 }
 
-.questions-and-title-container{
+.questions-and-title-container {
   width: 86%;
   margin: auto;
 }
 
-.questions-paragraph{
+.questions-paragraph {
   font-size: 1.2rem;
   margin-top: 6px;
 }
 
-.questions-container{
+.questions-container {
   display: grid;
   gap: 2em;
   padding-top: 20px;
   padding-bottom: 80px;
 }
 
-.questions-padding{
+.questions-padding {
   padding: 0;
   transition: .3s;
   border: 2px solid #000;
@@ -330,18 +349,18 @@ a{
   overflow: hidden;
 }
 
-.questions-padding--add{
+.questions-padding--add {
   padding-bottom: 30px;
   height: 140px;
   transition: .3s;
 }
 
-.questions-answers{
+.questions-answers {
   padding: 0px 30px 0px;
   overflow: hidden;
 }
 
-.questions-title{
+.questions-title {
   text-align: left;
   display: flex;
   font-size: 20px;
@@ -353,7 +372,7 @@ a{
   font-weight: 600;
 }
 
-.questions-arrow{
+.questions-arrow {
   border-radius: 50%;
   background-color: #000;
   width: 25px;
@@ -366,21 +385,21 @@ a{
   transition: transform .3s;
 }
 
-.questions-arrow--rotate{
+.questions-arrow--rotate {
   transform: rotate(180deg);
 }
 
-.questions-show{
+.questions-show {
   text-align: left;
   height: 0;
   transition: height .3s;
 }
 
-.questions-img{
+.questions-img {
   display: block;
 }
 
-.questions-copy{
+.questions-copy {
   width: 60%;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -485,7 +504,8 @@ a{
   padding-bottom: 10px;
 }
 
-.footer-copyright, .footer-social {
+.footer-copyright,
+.footer-social {
   display: flex;
   width: auto;
   margin: auto;
@@ -519,175 +539,214 @@ a{
 
 /*Responsive - Mostrar menu hamburguesa en una resolución menor o igual a 1024px de ancho*/
 @media (max-width: 1024px) {
+  /*Nav/Header - Responsive*/
   .navM {
-      position: fixed;
-      width: 100%;
-      box-shadow: 0px 15px 10px -15px #111;
-      background-color: rgba(255, 255, 255, 1);
-      top: -150%;
-      left: 0;
-      padding: 2rem 0;
-      transition: 0.4s;
-      z-index: 100;
-      border-radius: 0 0 .8rem .8rem;
-    }
-    .show-menu {
-      top: 0;
-    }
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 15px 10px -15px #111;
+    background-color: rgba(255, 255, 255, 1);
+    top: -150%;
+    left: 0;
+    padding: 2rem 0;
+    transition: 0.4s;
+    z-index: 100;
+    border-radius: 0 0 .8rem .8rem;
+  }
 
-    .navToggle{
-      margin: auto;
-    }
+  .show-menu {
+    top: 0;
+  }
 
-    .carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover{
-      background: none;
-    }
+  .navToggle {
+    margin: auto;
+  }
 
-    .carousel-inner{
-      height: 90vh;
-      width: 100vw;
-      margin: auto;
-    }
-  
-  .carousel-item img{
-      height: 90vh;
-    }
+  /*Carrusel - Responsive*/
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background: none;
+  }
 
-  .principal-title h3, .medium-title h4, .title-questions{
-      font-weight: bolder;
-      font-size: 1.4rem;
-      margin: auto;
-      text-transform: uppercase;
-    }
+  .carousel-inner {
+    height: 90vh;
+    width: 100vw;
+    margin: auto;
+  }
 
-  .sinopsis-container{
+  .news-summary {
+    display: none;
+  }
+
+  .carousel-item img {
+    height: 90vh;
+  }
+
+  /*Estilos generales para títulos*/
+  .principal-title h3,
+  .medium-title h4,
+  .title-questions {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  /*Sinopsis animes destacados - Responsive*/
+  .sinopsis-container {
     position: relative;
   }
-  
-  .title-anime{
+
+  .title-anime {
     position: absolute;
     bottom: 0;
     left: 0;
     margin: auto;
     z-index: 1;
   }
-  
-  .img-and-title{
+
+  .img-and-title {
     position: relative;
   }
-  
-  .img-anime img{
+
+  .img-anime img {
     width: 100%;
     height: auto;
     display: block;
   }
-}
 
+  /*Footer - Responsive*/
+  .first-part-footer {
+    display: flex;
+    margin: auto;
+    border-bottom: 2px solid #d0caca61;
+  }
+
+  .first-part-footer img {
+    width: 100%;
+  }
+
+  .social-links,
+  .footer-social h3 {
+    margin: auto;
+  }
+}
 
 /*Mostrar el header con los links en una resolución mayor o igual a 1025px de ancho*/
 @media (min-width: 1025px) {
-    .navclose, .navToggle {
-        display: none;
-    }
-    .navList {
-        flex-direction: row;
-        column-gap: 3rem;
-    }
-    .navLink {
-        text-transform: initial;
-        font-weight: initial;
-    }
+  /*Nav/Header - Responsive*/
+  .navclose,
+  .navToggle {
+    display: none;
   }
 
-  /*Responsive - Hasta 768px de ancho*/
-  @media (max-width: 768px){
-    /*Nav/Header - Responsive*/    
-    .nav{
-      justify-content: space-between;
-    }
+  .navList {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
 
-    .header-img{
-      width: 20vw;
-    }
+  .navLink {
+    text-transform: initial;
+    font-weight: initial;
+  }
 
-    .navToggle, .navclose{
-      font-size: 1.5rem;
-    }
-    
-    .navList{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      row-gap: 1rem;
-      margin: auto;
-    }
+  .news-summary {
+    display: block;
+  }
 
-    .header-img, .navToggle {
-    margin: 0px 40px;
+  /*Footer - Responsive*/
+  .footer-img {
+    width: 30vw;
+  }
+
+  .footerspan,
+  .footertext,
+  .footer-col ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-col h3 {
+    font-size: 1.2rem;
+  }
 }
 
-    /*Carousel - Responsive*/
-    .carousel-caption h1{
-      font-size: 1.4rem;
-      text-transform: uppercase;
-      font-weight: bolder;
-      font-family: 'Jost', 'sans-serif';
-    }
-  
-    .carousel-caption h2, .carousel-caption .paragraph-carrousel{
-      font-size: 1.2rem;
-      font-weight: bolder;
-      font-family: 'Jost', 'sans-serif';
-    }
+/*Responsive - Hasta 768px de ancho*/
+@media (max-width: 768px) {
 
-    .carousel-caption a{
-      font-size: .96rem;
-    }
-
-    .news-summary{
-      display: none;
-    }
-
-    .carousel-inner{
-      max-height: 60vh;
-      margin: auto;
-    }
-  
-  .carousel-item img{
-      max-height: 60vh;
-    }
-
-  /*Galeria - Responsive*/
-  .container-gallery{
-      display: flex;
-      width: 96%;
-      height: 84vh;
-      margin: auto;
-    }
-  
-  .img-gallery{
-      width: 100%;
-      flex-grow: 1;
-      object-fit: cover;
-      opacity: .94;
-      transition: .5 ease;
-      border: 2px solid #000;
-    }
-  
-  .img-gallery-1{
-    border-right: none;
+  /*Nav/Header - Responsive*/
+  .nav {
+    justify-content: space-between;
   }
-  
-  .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
-    border-left: none;
+
+  .header-img {
+    width: 20vw;
   }
-  
-  .gallery-img{
+
+  .navToggle,
+  .navclose {
+    font-size: 1.5rem;
+  }
+
+  .navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin: auto;
+  }
+
+  .header-img,
+  .navToggle {
+    margin: 0px 40px;
+  }
+
+  /*Carousel - Responsive*/
+  .carousel-caption h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Jost', 'sans-serif';
+  }
+
+  .carousel-caption h2,
+  .carousel-caption .paragraph-carrousel {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: 'Jost', 'sans-serif';
+  }
+
+  .carousel-caption a {
+    font-size: .96rem;
+  }
+
+  .news-summary {
+    display: none;
+  }
+
+  .carousel-inner {
+    max-height: 60vh;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    max-height: 60vh;
+  }
+
+  /*Galeria de imágenes - Responsive*/
+  .container-gallery {
+    display: flex;
+    width: 96%;
+    height: 84vh;
+    margin: auto;
+  }
+
+  .gallery-img {
     width: 100%;
     height: 100%;
   }
-  
-  .img-gallery:hover{
+
+  .img-gallery:hover {
     cursor: pointer;
     width: 48vw;
     opacity: 1;
@@ -695,165 +754,145 @@ a{
   }
 
   /*Sinopsis destacados del año - Responsive*/
-  .title-anime h5{
+  .title-anime h5 {
     font-size: 1.3rem;
     padding: 10px 16px;
   }
-  
-  .sinopsis{
+
+  .sinopsis {
     margin-top: 16px;
   }
-  
-  .sinopsis li{
+
+  .sinopsis li {
     list-style: square;
     margin-left: 10px;
     margin-bottom: 16px;
   }
 
-  .sinopsis ul li, .anime-span{
+  .sinopsis ul li,
+  .anime-span {
     font-size: .9rem;
   }
 
-  .img-anime img{
+  .img-anime img {
     width: 100%;
     height: 32vh;
   }
 
   /*Preguntas frecuentes - Responsive*/
-  .questions-paragraph, .questions-title{
+  .questions-paragraph,
+  .questions-title {
     font-size: .9rem;
   }
 
-  .questions-title{
+  .questions-title {
     padding: 20px 0px 0px 0px;
   }
 
-  .questions-show{
+  .questions-show {
     font-size: .82rem;
   }
-  
-.questions-padding{
-  height: 8vh;
-}
 
-.questions-padding--add{
-  height: 17.4vh;
-}
-
-  /*Footer - Responsive*/
-  .first-part-footer{
-    display: flex;
-    margin: auto;
-    border-bottom: 2px solid #d0caca61;
+  .questions-padding {
+    height: 8vh;
   }
 
-  .footer-img{
+  .questions-padding--add {
+    height: 17.4vh;
+  }
+
+  /*Footer - Responsive*/
+  .footer-img {
     width: 26vw;
   }
 
-  .first-part-footer img{
-    width: 100%;
-  }
-
-  .footer-copyright{
+  .footer-copyright {
     flex-direction: column;
     row-gap: 1rem;
   }
 
-  .footerspan, .footertext, .footer-col ul li a{
+  .footerspan,
+  .footertext,
+  .footer-col ul li a {
     margin: auto;
     font-size: .8rem;
   }
 
-  .social-links, .footer-social h3{
-    margin: auto;
-  }
-
-  .footer-col h3{
+  .footer-col h3 {
     font-size: .9rem;
   }
 }
 
-  /*Responsive - De 769px a 980px de ancho */
-  @media (min-width: 769px) and (max-width: 980px){
-    /*Estilos generales para titulos*/
-    .principal-title h3, .medium-title h4, .title-questions{
-      font-size: 1.6rem;
-    }
-    
-   /*Header/Navbar - Responsive*/
-   .nav{
+/*Responsive - De 769px a 980px de ancho */
+@media (min-width: 769px) and (max-width: 980px) {
+  /*Estilos generales para titulos*/
+  .principal-title h3,
+  .medium-title h4,
+  .title-questions,
+  .carousel-caption h1 {
+    font-size: 1.6rem;
+  }
+
+  /*Header/Navbar - Responsive*/
+  .nav {
     justify-content: space-between;
   }
 
-  .header-img{
+  .header-img {
     width: 22vw;
   }
 
-  .navToggle, .navclose{
+  .navToggle,
+  .navclose {
     font-size: 1.6rem;
   }
-  
-  .navList{
+
+  .navList {
     row-gap: 1.2rem;
   }
 
-  .header-img, .navToggle {
+  .header-img,
+  .navToggle {
     margin: 0px 50px;
   }
 
-    /*Carousel - Responsive*/
-    .carousel-caption h1{
-      font-size: 1.6rem;
-    }
-  
-    .carousel-caption h2, .carousel-caption .paragraph-carrousel{
-      font-size: 1.36rem;
-    }
+  /*Carousel - Responsive*/
+  .carousel-caption h2,
+  .carousel-caption .paragraph-carrousel {
+    font-size: 1.36rem;
+  }
 
-    .carousel-caption a{
-      font-size: 1rem;
-    }
+  .carousel-caption a {
+    font-size: 1rem;
+  }
 
-    .news-summary{
-      display: none;
-    }
+  .news-summary {
+    display: none;
+  }
 
-    .carousel-inner{
-      height: 70vh;
-      margin: auto;
-    }
-  
-  .carousel-item img{
-      height: 70vh;
-    }
+  .carousel-inner {
+    height: 70vh;
+    margin: auto;
+  }
 
-  /*Galeria - Responsive*/
-  .container-gallery{
+  .carousel-item img {
+    height: 70vh;
+  }
+
+  /*Galeria de imágenes - Responsive*/
+  .container-gallery {
     display: flex;
     width: 96%;
     height: 85vh;
     margin: auto;
   }
 
-  .img-gallery{
-      border: 2px solid #000;
-    }
-
-  .img-gallery-1{
-    border-right: none;
-  }
-
-  .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
-    border-left: none;
-  }
-
-  .gallery-img{
+  .gallery-img {
     width: 100%;
     height: 100%;
   }
 
-  .img-gallery:hover{
+  .img-gallery:hover {
     cursor: pointer;
     width: auto;
     opacity: 1;
@@ -861,492 +900,484 @@ a{
   }
 
   /*Sinopsis destacados del año - Responsive*/
-  .title-anime h5{
+  .title-anime h5 {
     font-size: 1.4rem;
     padding: 10px 16px;
   }
-  
-  .sinopsis li{
+
+  .sinopsis li {
     margin-left: 14px;
   }
 
-  .sinopsis ul li, .anime-span{
+  .sinopsis ul li,
+  .anime-span {
     font-size: .9rem;
   }
 
-  .img-anime img{
+  .img-anime img {
     width: 100%;
     height: 36vh;
   }
 
   /*Preguntas frecuentes - Responsive*/
-  .questions-paragraph, .questions-title{
+  .questions-paragraph,
+  .questions-title {
     font-size: 1rem;
   }
 
-  .questions-title{
+  .questions-title {
     padding: 20px 0px 0px 0px;
   }
 
-  .questions-show{
+  .questions-show {
     font-size: .88rem;
   }
-  
-.questions-padding{
-  height: 8vh;
-}
 
-.questions-padding--add{
-  height: 18vh;
-}
+  .questions-padding {
+    height: 8vh;
+  }
+
+  .questions-padding--add {
+    height: 18vh;
+  }
 
   /*Footer - Responsive*/
-  .footer-img{
+  .footer-img {
     width: 28vw;
   }
 
-  .first-part-footer img{
-    width: 100%;
-  }
-
-  .footer-copyright{
+  .footer-copyright {
     flex-direction: column;
     row-gap: 1.2rem;
   }
 
-  .footerspan, .footertext, .footer-col ul li a{
+  .footerspan,
+  .footertext,
+  .footer-col ul li a {
     margin: auto;
     font-size: .9rem;
   }
 
-  .social-links, .footer-social h3{
-    margin: auto;
-  }
-
-  .footer-col h3{
+  .footer-col h3 {
     font-size: 1rem;
   }
 }
 
-  /*Responsive - De 769px a 860px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
-  @media (min-width: 769px) and (max-width: 860px){
-    /*Carousel - Responsive*/
-    .carousel-inner{
-      height: 66vh;
-      margin: auto;
-    }
-
-  .carousel-item img{
-      height: 66vh;
-    }
-
-    /*Sinopsis destacados del año - Responsive*/
-    .img-anime img{
-        width: 100%;
-    }
+/*Responsive - De 769px a 860px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+@media (min-width: 769px) and (max-width: 860px) {
+  /*Carousel - Responsive*/
+  .carousel-inner {
+    height: 66vh;
+    margin: auto;
   }
 
-    /*Responsive - De 861px a 900px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
-    @media (min-width: 861px) and (max-width: 900px){
-      /*Sinopsis destacados del año - Responsive*/
-      .img-anime img{
-          width: 100%;
-          height: 40vh;
-      }
-    }
-
-    /*Responsive - De 901px a 940px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
-    @media (min-width: 901px) and (max-width: 940px){
-      /*Sinopsis destacados del año - Responsive*/
-      .img-anime img{
-          width: 100%;
-          height: 40vh;
-        }
-      }
-
-  /*Responsive - De 981px a 1200px de ancho*/
-    @media (min-width: 981px) and (max-width: 1200px){
-      /*Estilos generales para titulos*/
-    .principal-title h3, .medium-title h4, .title-questions{
-      font-size: 1.7rem;
-    }
-
-    /*Header/Navbar - Responsive*/
-    .nav{
-      justify-content: space-between;
-    }
-  
-    .header-img{
-      width: 22vw;
-    }
-  
-    .navToggle, .navclose{
-      font-size: 1.9rem;
-    }
-    
-    .navList{
-      row-gap: 1.4rem;
-    }
-  
-    .header-img, .navToggle {
-      margin: 0px 60px;
-    }
-
-    /*Carrusel - Responsive*/
-    .carousel-caption h1{
-      font-size: 1.7rem;
-    }
-  
-    .carousel-caption h2, .carousel-caption .paragraph-carrousel{
-      font-size: 1.6rem;
-    }
-
-    .carousel-caption p{
-      display: none;
-    }
-
-    .carousel-caption a{
-      font-size: 1.05rem;
-    }
-
-    .carousel-inner{
-      height: 80vh;
-      width: 100vw;
-      margin: auto;
-    }
-      
-    .carousel-item img{
-      height: 80vh;
-    }
-
-    .carousel-control-prev, .carousel-control-next, .carousel-control-prev:hover, .carousel-control-next:hover{
-      background: none;
-    }
-
-/*Galeria - Responsive*/
-.container-gallery{
-  display: flex;
-  width: 96%;
-  height: 85vh;
-  margin: auto;
-}
-
-.img-gallery{
-    border: 3px solid #000;
+  .carousel-item img {
+    height: 66vh;
   }
 
-.img-gallery-1{
-  border-right: none;
+  /*Sinopsis destacados del año - Responsive*/
+  .img-anime img {
+    width: 100%;
+  }
 }
 
-.img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
-  border-left: none;
+/*Responsive - De 861px a 900px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
+@media (min-width: 861px) and (max-width: 900px) {
+  /*Sinopsis destacados del año - Responsive*/
+  .img-anime img {
+    width: 100%;
+    height: 40vh;
+  }
 }
 
-.img-gallery:hover{
-  width: 390px;
+/*Responsive - De 901px a 940px de ancho - Responsive hecho para mejorar el tamaño de las imagenes en esta resolución*/
+@media (min-width: 901px) and (max-width: 940px) {
+  /*Sinopsis destacados del año - Responsive*/
+  .img-anime img {
+    width: 100%;
+    height: 40vh;
+  }
 }
 
-/*Sinopsis destacados del año - Responsive*/
-.title-anime h5{
-  font-size: 1.5rem;
-  padding: 10px 16px;
+/*Responsive - De 980px de ancho - Responsive hecho para reducir el código respecto a los bordes de las imágenes de la sección de destacados*/
+@media (max-width: 980px) {
+  /*Destacados - Responsive*/
+  .img-gallery {
+    border: 2px solid #000;
+  }
+
+  .img-gallery-1 {
+    border-right: none;
+  }
+
+  .img-gallery-2,
+  .img-gallery-3,
+  .img-gallery-4,
+  .img-gallery-5,
+  .img-gallery-6,
+  .img-gallery-7 {
+    border-left: none;
+  }
 }
 
-.sinopsis li{
-  margin-left: 14px;
+/*Responsive - De 981px a 1200px de ancho*/
+@media (min-width: 981px) and (max-width: 1200px) {
+  /*Estilos generales para titulos*/
+  .principal-title h3,
+  .medium-title h4,
+  .title-questions,
+  .carousel-caption h1 {
+    font-size: 1.7rem;
+  }
+
+  /*Header/Navbar - Responsive*/
+  .nav {
+    justify-content: space-between;
+  }
+
+  .header-img {
+    width: 22vw;
+  }
+
+  .navToggle,
+  .navclose {
+    font-size: 1.9rem;
+  }
+
+  .navList {
+    row-gap: 1.4rem;
+  }
+
+  .header-img,
+  .navToggle {
+    margin: 0px 60px;
+  }
+
+  /*Carrusel - Responsive*/
+  .carousel-caption h2,
+  .carousel-caption .paragraph-carrousel {
+    font-size: 1.6rem;
+  }
+
+  .carousel-caption a {
+    font-size: 1.05rem;
+  }
+
+  .carousel-inner {
+    height: 80vh;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    height: 80vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background: none;
+  }
+
+  /*Galeria de imágenes - Responsive*/
+  .container-gallery {
+    display: flex;
+    width: 96%;
+    height: 85vh;
+    margin: auto;
+  }
+
+  .img-gallery:hover {
+    width: 390px;
+  }
+
+  /*Sinopsis destacados del año - Responsive*/
+  .title-anime h5 {
+    font-size: 1.5rem;
+    padding: 10px 16px;
+  }
+
+  .sinopsis li {
+    margin-left: 14px;
+  }
+
+  .sinopsis ul li,
+  .anime-span {
+    font-size: .9rem;
+  }
+
+  .img-anime img {
+    width: 100%;
+    height: 42vh;
+  }
+
+  /*Preguntas frecuentes - Responsive*/
+  .questions-paragraph,
+  .questions-title {
+    font-size: 1.1rem;
+  }
+
+  .questions-title {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .questions-show {
+    font-size: .95rem;
+  }
+
+  .questions-padding {
+    height: 8vh;
+  }
+
+  .questions-padding--add {
+    height: 19vh;
+  }
+
+  /*Footer - Responsive*/
+  .footer-img {
+    width: 30vw;
+  }
+
+  .first-part-footer img {
+    width: 100%;
+  }
+
+  .social-links,
+  .footer-social h3 {
+    margin: auto;
+  }
+
+  .footer-col h3 {
+    font-size: 1.1rem;
+  }
 }
 
-.sinopsis ul li, .anime-span{
-  font-size: .9rem;
-}
-
-.img-anime img{
-  width: 100%;
-  height: 42vh;
-}
-
-/*Preguntas frecuentes - Responsive*/
-.questions-paragraph, .questions-title{
-  font-size: 1.1rem;
-}
-
-.questions-title{
-  padding: 20px 0px 0px 0px;
-}
-
-.questions-show{
-  font-size: .95rem;
-}
-
-.questions-padding{
-height: 8vh;
-}
-
-.questions-padding--add{
-height: 19vh;
-}
-
-/*Footer - Responsive*/
-.footer-img{
-  width: 30vw;
-}
-
-.first-part-footer img{
-  width: 100%;
-}
-
-.social-links, .footer-social h3{
-  margin: auto;
-}
-
-.footer-col h3{
-  font-size: 1.1rem;
-}
-}
-
-/*Responsive - De 981px a 1025px de ancho - Responsive para cambiar el formato del Copyright del Footer*/
-@media (min-width: 981px) and (max-width: 1025px){
-  .footer-copyright{
+/*Responsive - De 981px a 1024px de ancho - Responsive para cambiar el formato del Copyright del Footer*/
+@media (min-width: 981px) and (max-width: 1024px) {
+  .footer-copyright {
     flex-direction: column;
     row-gap: 1.4rem;
   }
-  
-  .footerspan, .footertext, .footer-col ul li a{
+
+  .footerspan,
+  .footertext,
+  .footer-col ul li a {
     margin: auto;
     font-size: .96rem;
   }
 }
 
-  /*Responsive - De 1025px a 1200px de ancho - Responsive hecho para ajustar la cantidad de carácteres del texto de la sección de noticias*/
-  @media (min-width: 1025px) and (max-width: 1200px){
-    .carousel-caption p{
-      display: block;
-    }
+/*Responsive - De 1025px de ancho como máximo - Responsive hecho para que el news-summary (resumen de la noticia) este oculto*/
+@media (min-width: 1025px) {
+  /*Carrusel - Responsive*/
+
+}
+
+/*Responsive - De 1025px a 1100px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+@media (min-width: 1025px) and (max-width: 1100px) {
+
+  /*Carrusel - Responsive*/
+  .carousel-inner {
+    height: 82vh;
+    width: 100vw;
+    margin: auto;
   }
 
-  /*Responsive - De 1025px a 1100px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
-  @media (min-width: 1025px) and (max-width: 1100px){
-    /*Carrusel - Responsive*/
-    .carousel-inner{
-      height: 82vh;
-      width: 100vw;
-      margin: auto;
-    }
-      
-    .carousel-item img{
-      height: 82vh;
-    }
+  .carousel-item img {
+    height: 82vh;
+  }
+}
+
+/*Responsive - De 1101px a 1120px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+@media (min-width: 1101px) and (max-width: 1120px) {
+
+  /*Carrusel - Responsive*/
+  .carousel-inner {
+    height: 86vh;
+    width: 100vw;
+    margin: auto;
   }
 
-  /*Responsive - De 1101px a 1120px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
-  @media (min-width: 1101px) and (max-width: 1120px){
-    /*Carrusel - Responsive*/
-    .carousel-inner{
-      height: 86vh;
-      width: 100vw;
-      margin: auto;
-    }
-      
-    .carousel-item img{
-      height: 86vh;
-    }
-
-    .img-anime img{
-      width: 100%;
-      height: 44vh;
-    }
+  .carousel-item img {
+    height: 86vh;
   }
 
-    /*Responsive - De 1121px a 1200px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
-    @media (min-width: 1121px) and (max-width: 1200px){
-      /*Carrusel - Responsive*/
-      .carousel-inner{
-        height: 84vh;
-        width: 100vw;
-        margin: auto;
-      }
-        
-      .carousel-item img{
-        height: 84vh;
-      }
-  
-      /*Sinopsis destacados del año - Responsive*/
-      .img-anime img{
-        width: 100%;
-        height: 46vh;
-      }
-    }
-
-    /*Responsive - De 1141px a 1160px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
-    @media (min-width: 1141px) and (max-width: 1200px){
-      /*Carrusel - Responsive*/
-      .carousel-inner{
-        height: 86vh;
-        width: 100vw;
-        margin: auto;
-      }
-            
-      .carousel-item img{
-        height: 86vh;
-      }
-      
-      /*Sinopsis destacados del año - Responsive*/
-      .img-anime img{
-        width: 100%;
-        height: 48vh;
-      }
-    }
-
-  /*Responsive - De 1201px a 1400px de ancho*/
-  @media (min-width: 1201px) and (max-width: 1400px){
-    /*Estilos generales para titulos*/
-    .principal-title h3, .medium-title h4, .title-questions{
-      font-size: 1.8rem;
-    }
-
-    /*Header/Navbar - Responsive*/
-    .nav{
-      justify-content: space-between;
-    }
-  
-    .header-img{
-      width: 18vw;
-    }
-
-    /*Carrusel - Responsive*/
-    .carousel-caption h1{
-      font-size: 1.8rem;
-    }
-  
-    .carousel-caption h2, .carousel-caption .paragraph-carrousel{
-      font-size: 1.7rem;
-    }
-
-    .carousel-caption p, .carousel-caption a{
-      font-size: 1.1rem;
-    }
-
-    .carousel-inner{
-      height: 88vh;
-      width: 90vw;
-      margin: auto;
-    }
-      
-    .carousel-item img{
-      height: 88vh;
-    }
-
-    .carousel-control-prev, .carousel-control-next{
-      background: rgba(0,0,0,.5);
-      width: 4.6vw;
-    }
-
-    .carousel-control-prev:hover, .carousel-control-next:hover{
-      background: rgba(0,0,0,.8);
-    }
-
-    /*Galeria - Responsive*/
-    .container-gallery{
-      display: flex;
-      width: 96%;
-      height: 90vh;
-      margin: auto;
-    }
-
-    .img-gallery{
-        border: 3px solid #000;
-      }
-
-    .img-gallery-1{
-      border-right: none;
-    }
-
-    .img-gallery-2, .img-gallery-3, .img-gallery-4, .img-gallery-5, .img-gallery-6, .img-gallery-7{
-      border-left: none;
-    }
-
-    .img-gallery:hover{
-      width: 36vw;
-    }
-
-/*Sinopsis destacados del año - Responsive*/
-.title-anime h5{
-  font-size: 1.6rem;
-  padding: 10px 16px;
+  .img-anime img {
+    width: 100%;
+    height: 44vh;
+  }
 }
 
-.sinopsis li{
-  margin-left: 16px;
-}
-
-.sinopsis ul li, .anime-span{
-  font-size: 1rem;
-}
-
-.img-anime img{
-  width: 100%;
-  height: 50vh;
-}
-
-/*Preguntas frecuentes - Responsive*/
-.questions-paragraph, .questions-title{
-  font-size: 1.2rem;
-}
-
-.questions-title{
-  padding: 20px 0px 0px 0px;
-}
-
-.questions-show{
-  font-size: 1rem;
-}
-
-.questions-padding{
-height: 8.4vh;
-}
-
-.questions-padding--add{
-height: 20vh;
-}
-
-/*Footer - Responsive*/
-.footer-img{
-  width: 30vw;
-}
-
-.footerspan, .footertext, .footer-col ul li a{
-  font-size: 1rem;
-}
-
-.footer-col h3{
-  font-size: 1.2rem;
-}
+/*Responsive - De 1121px a 1200px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+@media (min-width: 1121px) and (max-width: 1200px) {
+  /*Carrusel - Responsive*/
+  .carousel-inner {
+    height: 84vh;
+    width: 100vw;
+    margin: auto;
   }
 
-  /*Responsive - De 1275px a 1289px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
-@media (min-width: 1275px) and (max-width: 1289px){
+  .carousel-item img {
+    height: 84vh;
+  }
+
+  /*Sinopsis destacados del año - Responsive*/
+  .img-anime img {
+    width: 100%;
+    height: 46vh;
+  }
+}
+
+/*Responsive - De 1141px a 1160px de ancho - Responsive hecho para mejorar el tamaño de las imagenes del carrusel y banners en esta resolución*/
+@media (min-width: 1141px) and (max-width: 1200px) {
+  /*Carrusel - Responsive*/
+  .carousel-inner {
+    height: 86vh;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    height: 86vh;
+  }
+
+  /*Sinopsis destacados del año - Responsive*/
+  .img-anime img {
+    width: 100%;
+    height: 48vh;
+  }
+}
+
+/*Responsive - De 1201px a 1400px de ancho*/
+@media (min-width: 1201px) and (max-width: 1400px) {
+  /*Estilos generales para titulos*/
+  .principal-title h3,
+  .medium-title h4,
+  .title-questions,
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+
+  /*Header/Navbar - Responsive*/
+  .nav {
+    justify-content: space-between;
+  }
+
+  .header-img {
+    width: 18vw;
+  }
+
+  /*Carrusel - Responsive*/
+  .carousel-caption h2,
+  .carousel-caption .paragraph-carrousel {
+    font-size: 1.7rem;
+  }
+
+  .carousel-caption p,
+  .carousel-caption a {
+    font-size: 1.1rem;
+  }
+
+  .carousel-inner {
+    height: 88vh;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .carousel-item img {
+    height: 88vh;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background: rgba(0, 0, 0, .5);
+    width: 4.6vw;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background: rgba(0, 0, 0, .8);
+  }
+
+  /*Galeria de imágenes - Responsive*/
+  .container-gallery {
+    display: flex;
+    width: 96%;
+    height: 90vh;
+    margin: auto;
+  }
+
+  .img-gallery:hover {
+    width: 36vw;
+  }
+
+  /*Sinopsis destacados del año - Responsive*/
+  .title-anime h5 {
+    font-size: 1.6rem;
+    padding: 10px 16px;
+  }
+
+  .sinopsis li {
+    margin-left: 16px;
+  }
+
+  .sinopsis ul li,
+  .anime-span {
+    font-size: 1rem;
+  }
+
+  .img-anime img {
+    width: 100%;
+    height: 50vh;
+  }
+
   /*Preguntas frecuentes - Responsive*/
-  .questions-padding--add{
-    height: 16vh;
-    }
+  .questions-paragraph,
+  .questions-title {
+    font-size: 1.2rem;
   }
 
-  /*Responsive - De 1290px a 1400px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
-@media (min-width: 1290px) and (max-width: 1400px){
-      /*Sinopsis destacados del año - Responsive*/
-      .img-anime img{
+  .questions-title {
+    padding: 20px 0px 0px 0px;
+  }
+
+  .questions-show {
+    font-size: 1rem;
+  }
+
+  .questions-padding {
+    height: 8.4vh;
+  }
+
+  .questions-padding--add {
+    height: 20vh;
+  }
+}
+
+/*Responsive - De 1275px a 1289px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
+@media (min-width: 1275px) and (max-width: 1289px) {
+  /*Preguntas frecuentes - Responsive*/
+  .questions-padding--add {
+    height: 16vh;
+  }
+}
+
+/*Responsive - De 1290px a 1400px de ancho - Responsive hecho para ajustar el tamaño del contenedor de la sección de preguntas*/
+@media (min-width: 1290px) and (max-width: 1400px) {
+
+  /*Sinopsis destacados del año - Responsive*/
+  .img-anime img {
     width: 100%;
     height: 54vh;
   }
 
   /*Preguntas frecuentes - Responsive*/
-  .questions-padding{
+  .questions-padding {
     height: 8.4vh;
-    }
-    
-    .questions-padding--add{
-    height: 17vh;
-    }
-}
+  }
 
+  .questions-padding--add {
+    height: 17vh;
+  }
+}
